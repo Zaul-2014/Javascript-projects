@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>replit</title>
+  </head>
+
+  <body>
+    <h3>Check if a number is odd or even</h3>
+
+    <script>
+      // Function to check if a number is odd or even
+
+      function oddOrEven(x) {
+        if (x % 2 == 0) {
+          document.write("Given number is : even");
+        } else {
+          document.write("Given number is : odd");
+        }
+      }
+
+      // Call the function with a number
+      // Prompt the user for a number and call the function
+      const userInput = prompt("Enter a number:");
+      const number = parseInt(userInput); // Convert input to a number
+      oddOrEven(number);
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    #title {
+      text-decoration: underline;
+      color: rgb(254, 231, 105);
+    }
+    #body {
+      background-color: rgb(232, 204, 91);
+    }
+    #result {
+      border: 1px bisque solid;
+      width: 100px;
+    }
+  </style>
+
+</head>
+<body id="body">
+
+  <h1 id="title">calculator</h1>
+
+  <p>
+    This is a calculator that adds. Enter any type of nunber and it solves it.
+  </p>
+
+  <div id="result">
+    
+  </div>
+
+
+
+
+
+
+  <script>
+    function calculate(a, b) {
+      return a + b;
+    }
+
+    const userinput1 = parseFloat(prompt('Enter num 1'));
+    const userinput2 = parseFloat(prompt('Enter num 2'));
+
+    const result = calculate(userinput1, userinput2);
+
+    console.log(result)
+    document.write(result)
+  </script>
+</body>
+</html>
