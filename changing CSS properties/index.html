@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Thsis a project that uses javascript." />
+    <style>
+      button {
+        right: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="button" onclick="btncolorchange()">button</button>
+    <script>
+      function btncolorchange() {
+        let btn = document.getElementById("button");
+
+        btn.onmouseover = function () {
+          btn.style.backgroundColor = "red";
+        };
+        btn.onmouseout = function () {
+          btn.style.backgroundColor = "blue";
+        };
+      }
+    </script>
+  </body>
+</html>

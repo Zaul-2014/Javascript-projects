@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    h2 {
+      text-align: center;
+    }
+    .square {
+      width: 200px;
+      height: 200px;
+      border: 1px solid black;
+      margin: auto;
+    }
+    
+    .btns {
+      padding: 20px;
+      margin: auto;
+      width: 200px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h2>Make changes to the square</h2>
+
+  <div class="square">
+    
+  </div>
+
+  <div class="btns">
+    <button onclick="circle()">Make circle</button>
+    <button onclick="hide()">Hide</button>
+    <button onclick="show()">Show</button>
+  </div>
+
+  <script>
+
+    let div = document.querySelector('.square');
+
+    function circle() {
+      div.style.borderRadius = "50%"
+    }
+
+    function hide() {
+      div.style.display = "none"
+    }
+
+    function show() {
+      div.style.display = "block"
+    }
+
+    div.onmouseenter = function() {
+      div.style.background = "red";
+    }
+
+    div.onmouseout = function() {
+      div.style.background = "blue";
+    }
+
+  </script>
+</body>
+</html>
