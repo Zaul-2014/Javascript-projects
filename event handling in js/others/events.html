@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>The Basement</h1>
+
+    <p id="story">
+      I wanted to find my friend, and he was hiding in the basement.
+    </p>
+
+    <button onclick="dark()">Get into the mood</button>
+
+    <br>
+
+    <br>
+
+    <audio id="audio" src="videos/scream-90747.mp3" type="audio/mpeg"></audio>
+
+    <button onclick="scream()">Dont click me</button>
+
+    <br />
+
+    <br />
+
+    <button onclick="changeText()">Tell me what happen..!!!</button>
+
+    <script>
+      function dark() {
+        document.body.style.backgroundColor = "black";
+
+        document.body.style.color = "white";
+      }
+
+      function scream() {
+        document.getElementById("audio").play();
+      }
+
+      function changeText() {
+        document.getElementById("story").innerHTML =
+          "So I carefully searched the damp dungeon. There you are!";
+      }
+    </script>
+  </body>
+</html>
